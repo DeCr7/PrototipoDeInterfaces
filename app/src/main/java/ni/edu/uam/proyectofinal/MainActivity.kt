@@ -23,6 +23,8 @@ import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.unit.dp
 import androidx.navigation.NavController
 import androidx.navigation.compose.*
+import androidx.navigation.compose.NavHost
+import ni.edu.uam.proyectofinal.ui.theme.ProyectoFinalTheme
 
 class MainActivity : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -30,7 +32,7 @@ class MainActivity : ComponentActivity() {
         enableEdgeToEdge()
 
         setContent {
-            NavegacionEntrePantallasTheme {
+            ProyectoFinalTheme {
                 AppNavegacion()
             }
         }
